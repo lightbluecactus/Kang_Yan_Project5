@@ -192,6 +192,11 @@ body
 		color: #eee8e1;
 	}
 
+	#galleryArea
+	{
+		flex: 1 0 auto;
+	}
+
 	#productList
 	{
 		flex-direction: row;
@@ -290,14 +295,15 @@ body
 
 		#productList div
 		{
-			/*min-width: 180px;
-			min-height: 180px;*/
+			min-width: 180px;
+			min-height: 180px;
 			margin: 0 5px;
 		}
 
 		#advertise
 		{
 			margin-left: 25px;
+			margin-right: 50px;
 
 		}
 
