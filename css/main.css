@@ -32,6 +32,7 @@ body
 
 #mainHeader
 {
+	height: 70px;
 	background-color: #eee8e1;
 	display: flex;
 	flex-direction: row;
@@ -41,8 +42,9 @@ body
 
 #logo
 {
-	margin: 0 auto;
-	max-width: 120px;
+	margin: 10px auto;
+	min-width: 100px;
+	min-height: 45px;
 	background-color: #1f1f7f;
 	text-align: center;
 }
@@ -50,15 +52,7 @@ body
 #mainNav
 {
 	display: none;
-	height: 70px;
-}
-
-#mainNav ul li a
-{
-	display: block;
-	text-align: center;
-	margin-left: 30px;
-	padding: 5px 15px;
+	
 }
 
 #hero
@@ -68,7 +62,7 @@ body
 	text-align: center;
 }
 
-#intro
+#introText
 {
 	height: 455px;
 	background-color: #eee8e1;
@@ -85,31 +79,40 @@ body
 	flex-direction: column;
 }
 
+#galleryArea
+{
+	display: flex;
+	flex-direction: column;
+}
+
 #advertise
 {
 	height: 160px;
 	background-color: #1f1f7f;
 	text-align: center;
+	order: -1;
+}
+
+#productList
+{
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 auto;
 }
 
 #productList div
 {
 	min-height: 180px;
 	min-width: 180px;
-	background-color: #eee8e1;
-	text-align: center;
 	margin: 60px 70px;
-	display: flex;
-	flex-direction: column;
-	flex: 1 0 auto;
+	background-color: #eee8e1;
+	color: #24292f;
+	text-align: center;
 }
 
 #action
 {
 	display: none;
-	height: 150px;
-	background-color: #1f1f7f;
-	text-align: center;
 }
 
 #mainFooter
@@ -158,3 +161,145 @@ body
 {
 	color: #eee8e1;
 }
+
+@media screen and (min-width: 641px) {
+
+	#logo
+	{
+		margin-left: 40px;
+		margin-bottom: 10px;
+	}
+
+	#mainNav
+	{
+		display: inline;
+	}
+
+	#mainNav ul
+	{
+		display: flex;
+		flex-direction: row;
+		margin-top: 30px;
+		margin-right: 10px;
+	}
+
+	#mainNav ul li a
+	{
+		text-align: center;
+		margin-left: 10px;
+		padding: 5px 15px;
+		background-color: #24292f;
+		color: #eee8e1;
+	}
+
+	#productList
+	{
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 30px 70px;
+	}
+
+	#productList div
+	{
+		min-width: 160px;
+		min-height: 160px;
+		margin: 20px 0;
+	}
+
+	#advertise
+	{
+		order: 2;
+		margin: 30px 70px;
+	}
+
+	#action
+	{
+		display: block;
+		height: 150px;
+		margin: 0 70px;
+		background-color: #24292f;
+		text-align: center;
+	}
+
+	#homeGallery
+	{
+		height: 750px;
+	}
+
+	#footerLogo
+	{
+		display: block;
+		width: 120px;
+		height: 120px;
+		background-color: #eee8e1;
+		color: #24292f;
+		margin-top: 20px;
+		margin-left: 10%;
+	}
+
+	#socialMedia
+	{
+		margin-left: auto;
+	}
+
+	#footerNav
+	{
+		margin-right: 20%;
+	}
+
+	}
+
+	@media screen and (min-width: 901px) {
+	
+		#logo
+		{
+			margin-left: 90px;
+		}
+
+		#intro
+		{
+			background-color: #ffd314;
+		}
+
+		#introText
+		{
+			margin-left: 25%;
+			margin-right: 10%;
+		}
+
+		#homeGallery
+		{
+			height: 550px;
+			flex-direction: row;
+		}
+
+		#action
+		{
+			order: -1;
+			margin-top: 45px;
+			min-width: 150px;
+			height: 350px;
+		}
+
+		#productList
+		{
+			margin-left: 25px;
+			margin-right: 50px;
+			flex: 2 1 auto;
+		}
+
+		#productList div
+		{
+			/*min-width: 180px;
+			min-height: 180px;*/
+			margin: 0 5px;
+		}
+
+		#advertise
+		{
+			margin-left: 25px;
+
+		}
+
+		
+	}
